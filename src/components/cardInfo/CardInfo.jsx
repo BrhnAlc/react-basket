@@ -3,9 +3,9 @@
 import React from 'react'
 import "./CardInfo.css"
 
-const CardInfo = () => {
+const CardInfo = ({info}) => {
   return (
-    <div style={{textAlign:'center', fontSize:"20px"}}>CardInfo</div>
+    <div style={{textAlign:'center', fontSize:"20px"}}>{info}</div>
   )
 }
 

@@ -1,17 +1,19 @@
 
 import React from 'react'
-import "./Card.css"
 import CardTitle from './../cardTitle/CardTitle';
 import CardImage from '../cardImage/CardImage';
 import CardInfo from '../cardInfo/CardInfo';
+import "./Card.css"
 
-const Card = () => {
+
+const Card = ({title,image,info,onClick}) => {
   return (
-    <div className='card'>
+    <div className='card' onClick={onClick}>
      <div className='card-body'>
-<CardTitle/>
-<CardImage/>
-<CardInfo/>
+
+<CardTitle title={title}/>
+<CardImage image={image}/>
+<CardInfo info={info}/>
 
 
 

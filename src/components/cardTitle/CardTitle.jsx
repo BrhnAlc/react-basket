@@ -3,9 +3,9 @@
 import React from 'react'
 import "./CardTitle.css"
 
-const CardTitle = () => {
+const CardTitle = ({title}) => {
   return (
-    <div className='card-title'>MSI Anakart</div>
+    <div className='card-title'>{title}</div>
   )
 }
 
